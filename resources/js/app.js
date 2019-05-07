@@ -19,8 +19,6 @@ $(".btn-submit").click(function(e){
         url: action,
         data: t.closest('form').serialize(),
         success:function(data){
-            //alert(data.success);
-            console.log(t.closest('form').find('#tbody'));
             $('#tbody').append("<tr>" +
                 "<td>" + data.name + "</td>" +
                 "<td>" + data.quantity + "</td>" +
