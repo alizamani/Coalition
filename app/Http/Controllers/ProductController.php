@@ -45,10 +45,6 @@ class ProductController extends Controller
             ]]);
 
             Storage::put($this->file_name, json_encode($data, JSON_PRETTY_PRINT));
-//            dd($data);
-
-           //return response()->json($data);
-            //Storage::put('database.json', 'Contents');
 
             return response()->json([
                 'name'     => $request->input('name'),
